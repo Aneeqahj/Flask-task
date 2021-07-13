@@ -24,9 +24,9 @@ def admin(name):
 @app.route('/moola/<int:salary>')
 def payment(salary):
     if salary > 10000:
-        return redirect("https://www.sahomeloans.com/")
+        return "Baller Alert"
     else:
-        return redirect("http://www.fnb.co.za")
+        return redirect("https://www.sahomeloans.com/")
 
 
 if __name__ == '__main__':
